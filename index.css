@@ -1,0 +1,205 @@
+/*
+ * GQuuuuuuX Activation
+ * Copyright (c) 2025 bills-appworks
+ * This software is released under the MIT License.
+ * http://opensource.org/licenses/mit-license.php
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Saira Stencil One');
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+html, body {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  padding: 1em;
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+#title {
+  font-family: "Inter";
+  font-weight: 900;
+  color: palegreen;
+  font-size: 12pt;
+}
+
+#qux {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 8em;
+  font-family: "Saira Stencil One";
+  font-size: 24pt;
+  font-weight: 900;
+  font-style: italic;
+  position: relative;
+}
+
+#qux:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background:url('texture.png');
+  z-index: 1;
+}
+
+#x {
+  vertical-align: -11%; 
+}
+
+#omega-psycommu {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+  color: lightseagreen;
+  width: 12em;
+  font-family: "Inter";
+  font-weight: 800;
+  filter: blur(0.8px);
+}
+
+#r-op-cont {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+#status {
+  margin-bottom: 0.3em;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightseagreen;
+  margin-left: 3em;
+}
+
+#message {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: center;
+  font-size: 10px;
+}
+
+#guide {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: center;
+  font-size: 10px;
+}
+
+#share {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  visibility: hidden;
+  width: 80%;
+  text-align: center;
+}
+
+#share > button {
+  padding: 1em;
+}
+
+/* シェアボタンクリック時バルーン */
+.copied-balloon {
+  width: 7em;
+  height: 3em;
+  top: -3.5em;
+  left: 10.5em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 0.5em 0 0.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: small;
+  color: #000000;
+  background-color: palegreen;
+  visibility: hidden;
+  transition: opacity 0.5s;
+  transition-delay: 1s;
+  opacity: 1;
+  /* for callout */
+  position: relative;
+}
+
+.copied-balloon-fadeout {
+  opacity: 0;
+  visibility: visible;
+}
+
+/* callout */
+.copied-balloon::before {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  left: -0.3em;
+  padding: 0.35em;
+  background: inherit;
+  border-top: 0;
+  border-right: 0;
+  transform: rotate(45deg);
+}
+
+header, footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: center;
+}
+
+footer {
+  font-size: 10pt;
+}
+
+.link {
+  background-color: #888888;
+}
+
+@media (min-width: 768px) {
+  #title {
+    font-size: 16pt;
+  }
+
+  #qux {
+    font-size: 56pt;
+  }
+
+  #message, #guide, #share > button {
+    font-size: 16pt;
+  }
+
+  footer {
+    font-size: 16pt;
+  }
+}
+
+@media (min-width: 960px) {
+  #title {
+    font-size: 20pt;
+  }
+
+  #qux {
+    font-size: 64pt;
+  }
+
+  #message, #guide, #share > button {
+    font-size: 16pt;
+  }
+
+  footer {
+    font-size: 16pt;
+  }
+}
